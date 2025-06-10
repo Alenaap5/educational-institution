@@ -1,0 +1,222 @@
+.hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/assets/college-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            transition: transform 0.3s;
+            border-radius: 10px;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .nav-pills .nav-link.active {
+            background-color: #0d6efd;
+        }
+         :root {
+            --primary-color: #4e73df;
+            --secondary-color: #f8f9fc;
+            --accent-color: #2e59d9;
+            --text-color: #5a5c69;
+            --light-gray: #dddfeb;
+        }
+        
+        body {
+            background-color: var(--secondary-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar-brand {
+            font-weight: 600;
+        }
+        
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            border: none;
+        }
+        
+        .table-responsive {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .table thead {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .table th {
+            font-weight: 600;
+        }
+        
+        .badge-primary {
+            background-color: var(--primary-color);
+        }
+        
+        .badge-success {
+            background-color: #1cc88a;
+        }
+        
+        .badge-warning {
+            background-color: #f6c23e;
+        }
+        
+        .action-btn {
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 3px;
+        }
+        
+        .search-box {
+            position: relative;
+        }
+        
+        .search-box i {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: var(--text-color);
+        }
+        
+        .search-box input {
+            padding-left: 40px;
+            border-radius: 20px;
+        }
+        
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        
+        .subject-badge {
+            margin-right: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        :root {
+            --primary-color: #4e73df;
+            --secondary-color: #f8f9fc;
+            --accent-color: #2e59d9;
+            --text-color: #5a5c69;
+            --light-gray: #dddfeb;
+        }
+        
+        body {
+            background-color: var(--secondary-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar-brand {
+            font-weight: 600;
+        }
+        
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            border: none;
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .course-card {
+            height: 100%;
+        }
+        
+        .course-card .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .table-responsive {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .table thead {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .table th {
+            font-weight: 600;
+        }
+        
+        .badge-primary {
+            background-color: var(--primary-color);
+        }
+        
+        .badge-success {
+            background-color: #1cc88a;
+        }
+        
+        .badge-warning {
+            background-color: #f6c23e;
+        }
+        
+        .action-btn {
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 3px;
+        }
+        
+        .search-box {
+            position: relative;
+        }
+        
+        .search-box i {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: var(--text-color);
+        }
+        
+        .search-box input {
+            padding-left: 40px;
+            border-radius: 20px;
+        }
+        
+        .schedule-item {
+            border-left: 3px solid var(--primary-color);
+            padding-left: 10px;
+            margin-bottom: 8px;
+        }
+        
+        .view-switch {
+            cursor: pointer;
+        }
+        
+        .view-switch.active {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
