@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колледж - Главная</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Иконки Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/assets/college-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            transition: transform 0.3s;
+            border-radius: 10px;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .nav-pills .nav-link.active {
+            background-color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-book-half"></i> Колледж Информационных Технологий
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="bi bi-house-door"></i> Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/students"><i class="bi bi-people"></i> Студенты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/teachers"><i class="bi bi-person-badge"></i> Преподаватели</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/courses"><i class="bi bi-journal-bookmark"></i> Курсы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-box-arrow-in-right"></i> Вход</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Система управления колледжем</h1>
+            <p class="lead mb-5">Эффективное управление учебным процессом, студентами и преподавателями</p>
+            <a href="/students" class="btn btn-primary btn-lg px-4 me-2">
+                <i class="bi bi-people-fill"></i> Студенты
+            </a>
+            <a href="/courses" class="btn btn-outline-light btn-lg px-4">
+                <i class="bi bi-journal-text"></i> Курсы
+            </a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Статистика -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Общая статистика</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card stat-card h-100 border-primary">
+                        <div class="card-body text-center">
+                            <i class="bi bi-people-fill text-primary" style="font-size: 2rem;"></i>
+                            <h3 class="card-title mt-2">{{ student_count }}</h3>
+                            <p class="card-text">Студентов</p>
+                            <a href="/students" class="btn btn-outline-primary">Просмотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card stat-card h-100 border-success">
+                        <div class="card-body text-center">
+                            <i class="bi bi-person-badge text-success" style="font-size: 2rem;"></i>
+                            <h3 class="card-title mt-2">{{ teacher_count }}</h3>
+                            <p class="card-text">Преподавателей</p>
+                            <a href="/teachers" class="btn btn-outline-success">Просмотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card stat-card h-100 border-info">
+                        <div class="card-body text-center">
+                            <i class="bi bi-journal-bookmark text-info" style="font-size: 2rem;"></i>
+                            <h3 class="card-title mt-2">{{ course_count }}</h3>
+                            <p class="card-text">Активных курсов</p>
+                            <a href="/courses" class="btn btn-outline-info">Просмотреть</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Быстрое меню -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Быстрый доступ</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <a href="/students/add" class="btn btn-primary w-100 py-3">
+                        <i class="bi bi-person-plus"></i><br>
+                        Добавить студента
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="/teachers/add" class="btn btn-success w-100 py-3">
+                        <i class="bi bi-person-video2"></i><br>
+                        Добавить преподавателя
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="/courses/add" class="btn btn-info w-100 py-3">
+                        <i class="bi bi-journal-plus"></i><br>
+                        Создать курс
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#" class="btn btn-warning w-100 py-3">
+                        <i class="bi bi-calendar-plus"></i><br>
+                        Добавить занятие
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Последние действия -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Последние действия</h2>
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        {% for action in recent_actions %}
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="bi bi-{{ action.icon }} text-{{ action.color }} me-2"></i>
+                                {{ action.description }}
+                            </div>
+                            <small class="text-muted">{{ action.time }}</small>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Колледж ИТ</h5>
+                    <p>Система управления учебным процессом</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-envelope"></i> info@college.ru</li>
+                        <li><i class="bi bi-telephone"></i> +7 (XXX) XXX-XX-XX</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Разработчики</h5>
+                    <p>Команда студентов группы КБ-21</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <small>© 2023 Колледж Информационных Технологий. Все права защищены.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
