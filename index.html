@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Колледж - Главная</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/bootstrap/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
@@ -24,13 +24,13 @@
                         <a class="nav-link active" href="#"><i class="bi bi-house-door"></i> Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="student.html"><i class="bi bi-people"></i> Студенты</a>
+                        <a class="nav-link" href="/templates/student.html"><i class="bi bi-people"></i> Студенты</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="teacher.html"><i class="bi bi-person-badge"></i> Преподаватели</a>
+                        <a class="nav-link" href="/templates/teacher.html"><i class="bi bi-person-badge"></i> Преподаватели</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="courses.html"><i class="bi bi-journal-bookmark"></i> Курсы</a>
+                        <a class="nav-link" href="/templates/courses.html"><i class="bi bi-journal-bookmark"></i> Курсы</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi bi-box-arrow-in-right"></i> Вход</a>
@@ -44,10 +44,10 @@
         <div class="container">
             <h1 class="display-4 fw-bold mb-4">Добро пожаловать!</h1>
             <p class="lead mb-5">Спишь сейчас-потом будешь не спать над конспектами ночью. </p>
-            <a href="student.html" class="btn btn-primary btn-lg px-4 me-2">
+            <a href="/templates/student.html" class="btn btn-primary btn-lg px-4 me-2">
                 <i class="bi bi-people-fill"></i> Студенты
             </a>
-            <a href="courses.html" class="btn btn-outline-light btn-lg px-4">
+            <a href="/templates/courses.html" class="btn btn-outline-light btn-lg px-4">
                 <i class="bi bi-journal-text"></i> Курсы
             </a>
         </div>
@@ -63,7 +63,7 @@
                             <i class="bi bi-people-fill text-primary" style="font-size: 2rem;"></i>
                             <h3 class="card-title mt-2">Список студентов</h3>
                             <p class="card-text">Студенты</p>
-                            <a href="student.html" class="btn btn-outline-primary">Просмотреть</a>
+                            <a href="/templates/student.html" class="btn btn-outline-primary">Просмотреть</a>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                             <i class="bi bi-person-badge text-success" style="font-size: 2rem;"></i>
                             <h3 class="card-title mt-2">Список преподавателей</h3>
                             <p class="card-text">Преподаватели</p>
-                            <a href="teacher.html" class="btn btn-outline-success">Просмотреть</a>
+                            <a href="/templates/teacher.html" class="btn btn-outline-success">Просмотреть</a>
                         </div>
                     </div>
                 </div>
@@ -83,43 +83,11 @@
                             <i class="bi bi-journal-bookmark text-info" style="font-size: 2rem;"></i>
                             <h3 class="card-title mt-2">Список курсов</h3>
                             <p class="card-text">Курсы</p>
-                            <a href="courses.html" class="btn btn-outline-info">Просмотреть</a>
+                            <a href="/templates/courses.html" class="btn btn-outline-info">Просмотреть</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="mb-5">
-            <h2 class="text-center mb-4">Быстрый доступ</h2>
-            <div class="row g-4">
-                <div class="col-md-3 col-6">
-                    <a href="student_add.html" class="btn btn-primary w-100 py-3">
-                        <i class="bi bi-person-plus"></i><br>
-                        Добавить студента
-                    </a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="/teachers/add" class="btn btn-success w-100 py-3">
-                        <i class="bi bi-person-video2"></i><br>
-                        Добавить преподавателя
-                    </a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="/courses/add" class="btn btn-info w-100 py-3">
-                        <i class="bi bi-journal-plus"></i><br>
-                        Создать курс
-                    </a>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="#" class="btn btn-warning w-100 py-3">
-                        <i class="bi bi-calendar-plus"></i><br>
-                        Добавить занятие
-                    </a>
-                </div>
-            </div>
-        </section>
-
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
                 <div class="col-md-4">
